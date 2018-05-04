@@ -3,8 +3,13 @@ import styled from 'styled-components'
 import logo from './logo.png'
 
 const Logo = styled.img`
-  width: 357px;
-  height: 500px;
+  height: auto;
+  width: 100%;
+  max-width: 350px;
+
+  @media (max-width: 767px) { 
+    max-width: 200px
+  }
 `
 
 export default () => (
